@@ -1,0 +1,58 @@
+// Variables used:
+// 	$text_size
+// 	$baseline_height
+// 	$light_grey
+
+table {
+	margin: 0 0 $baseline_height;
+	width: 100%;
+	font-size: $text_size;
+	tr, th, td, caption {
+		padding: $baseline_height/3 $baseline_height/2;
+		border: 1px solid $light_grey;
+		}
+	td {vertical-align: top;}
+	caption {
+		padding: 0 0 $baseline_height/3;
+		border: 0;
+		font-weight: bold;
+		}
+	th {font-weight: bold;}
+	p, li {font-size: 1em;}
+
+	// striped
+	&.striped tbody tr:nth-child(even) {background-color: lighten($light_grey, 5%);}
+
+	// horizontal borders only
+	&.horizontal {
+		tr, th, td, caption {
+			padding: $baseline_height/3 0;
+			border-width: 1px 0;
+			}
+		caption {
+			padding: 0 0 $baseline_height/3;
+			border: 0;
+			}
+		}
+
+	// combined horizontal and striped
+	&.horizontal.striped {
+		tr, th, td, caption {
+			padding: $baseline_height/3 $baseline_height/2;
+			border-width: 1px 0;
+			}
+		caption {
+			padding: 0 0 $baseline_height/3;
+			border: 0;
+			}
+		}
+	}
+//	For responsive tables (using js)
+div.table-wrapper {
+	overflow-x: scroll;
+	overflow-y: hidden;
+	table {
+		margin-bottom: 0;
+		th {white-space: nowrap;}
+		}
+	}

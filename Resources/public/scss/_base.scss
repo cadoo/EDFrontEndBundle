@@ -1,0 +1,87 @@
+//  =Variables (you can go with !default but I couldn't be bothered with it, it seems lazy to me)
+//  ------------------------------------------------------
+//  Colors variables
+$dark_grey       : #444;                // #444 on white = awesome!
+$grey            : #ddd;
+$light_grey      : #eee;
+$blue            : #4787ed;             // Google blue ;)
+$green           : #2ad12a;
+$orange          : #fab40b;
+$red             : #e53e3e;
+$yellow          : #fbfb54;
+//  Sizes
+$text_size       :   1em;               // Text size
+$baseline_height :  16px;               // baseline height. 16px is great
+$border_radius   :   2px;               // Border radius (duh!)
+//  Document Colors
+$text_color      : $dark_grey;          // Text color
+$background_html : white;               // Background color HTML
+$background_body : white;               // Background color BODY
+$link_color      : darken($blue, 10%);  // Link color
+$link_hover      : black;               // Link hover color
+$border_color    : $light_grey;         // Border color
+//  Font stacks
+$sans            : "Helvetica Neue", Helvetica, Arial, sans-serif;
+$serif           : "Palatino Linotype", Palatino, Georgia, "Times New Roman", Times, serif;
+$mono            : Monaco, Consolas, "Bitstream Vera Sans Mono", "Andale Mono", "DejaVu Sans Mono", "Lucida Console", monospace;
+$typewriter      : "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
+//  Web fonts font stack exmple
+$opensans        : "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+//  Other
+$path            : "../images";         // Path to images
+
+
+
+//  =Mixins - @include mixin_name;
+//  ------------------------------------------------------
+@mixin clicky {position: relative; top: 1px;}
+
+//  Retina images mixin
+//  Usage: #logo {@include at2x('#{$path}/sprites-01', 'png', 600px, 300px);}
+//  where sprites-01 is the image name, png is an extension and the 600px and 300px are the dimensions of the original, non @2x image
+@mixin at2x($path, $ext: "png", $w: auto, $h: auto) {
+  background-image: url($path + "." + $ext);
+  $at2x_path: $path + "@2x" + "." + $ext;
+  @media
+  only screen and (-webkit-min-device-pixel-ratio: 2),
+  only screen and (min--moz-device-pixel-ratio: 2),
+  only screen and (-o-min-device-pixel-ratio: 2/1),
+  only screen and (min-device-pixel-ratio: 2),
+  only screen and (min-resolution: 192dpi),
+  only screen and (min-resolution: 2dppx) {
+    background-image: url($at2x_path);
+    background-size: $w $h;
+  }
+}
+
+//  perfect background image
+//  usage @include background-cover("image.png");
+@mixin background-cover($imgpath) {
+  background: url(#{$imgpath}) no-repeat center center fixed;
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='#{$imgpath}', sizingMethod='scale');
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='#{$imgpath}', sizingMethod='scale')";
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+//  THIS MIXIN WORKS ONLY WITH LATEST SASS BETA
+//  @include breakpoint(portrait)
+@mixin breakpoint($point) {
+  @if $point == laptop {
+    @media (min-width: 1280px) { @content; }
+  }
+  @else if $point == landscape {
+    @media (min-width: 1008px) { @content; }
+  }
+  @else if $point == portrait {
+    @media (min-width: 768px)  { @content; }
+  }
+}
+
+//  =Compass, reset...
+//  ------------------------------------------------------
+@import "compass/css3";
+@import "normalize";
+@import "webfontsandicons";

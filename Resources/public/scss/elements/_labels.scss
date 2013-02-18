@@ -1,0 +1,48 @@
+// Variables used:
+// 	$light_grey
+// 	$border_radius
+// 	$blue
+//	$text_size
+
+span.label,
+a.label {
+	background-color : $light_grey;
+	padding          : 1px 6px 3px;
+	line-height      : 1;
+	display          : inline;
+	@include transition-property(all); @include transition-duration(.15s);
+	@include border-radius($border_radius);
+	@include text-shadow(0 1px 0 #fff);
+	//	badge
+	&.badge {
+		font-size      : 10px;
+		font-weight    : bold;
+		margin-top     : -.6em;
+		margin-bottom  : -.25em;
+		padding        : .2em .5em .3em;
+		display        : inline-block;
+		vertical-align : middle;
+		@include border-radius($border_radius*3);
+		}
+	}
+a.label:hover {
+	color: #fff;
+	background-color: $dark_grey;
+	@include text-shadow(none);
+	}
+
+//	other elements labels
+.label {padding-left: $baseline_height/2; padding-right: $baseline_height/2;
+	//	highlight
+	&.highlight {background-color: $yellow; @include text-shadow(none);}
+	//	note
+	&.note {background-color: $blue; color: white; @include text-shadow(0 -1px 0 darken($blue, 30%));}
+	//	success
+	&.success {background-color: $green; color: white; @include text-shadow(0 -1px 0 darken($green, 10%));}
+	//	warning
+	&.warning {background-color: $orange; color: white; @include text-shadow(0 -1px 0 darken($orange, 10%));}
+	//	error
+	&.error {background-color: $red; color: white; @include text-shadow(0 -1px 0 darken($red, 15%));}
+
+	[class^="icon-"] {line-height: .9em; font-size: .9em; display: inline-block;}
+	}

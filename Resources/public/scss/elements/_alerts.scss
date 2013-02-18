@@ -1,0 +1,76 @@
+// Variables used:
+//     $light_grey
+//     $dark_grey
+//     $border_radius
+//     $baseline_height
+//     $blue
+//     $yellow
+//     $green
+//     $orange
+//     $red
+//     $text_size
+
+.alert {
+  @include border-radius($border_radius);
+  @include text-shadow(0 1px 0 #fff);
+  position: relative;
+  display: block;
+  margin-bottom: $baseline_height;
+  padding: $baseline_height/2 $baseline_height*1.5 $baseline_height/2 $baseline_height;
+  background-color: $light_grey;
+  &.close-toggle {padding: $baseline_height/2 baseline_height;}
+
+  p {line-height: 1.3em; margin-top: $baseline_height/2; margin-bottom: 0;}
+  p:first-child {margin-top: 0;}
+
+  button.close {
+    position: absolute;
+    top: 0px;
+    right: 5px;
+    padding: 0;
+    border: 0;
+    background-color: transparent;
+    color: inherit;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 22px;
+    @include opacity(.5);
+    @include transition-property(opacity);
+    @include transition-duration(.15s);
+    &:hover {
+      @include opacity(1);
+      }
+    }
+
+  //highlight
+  &.highlight {
+    background-color: $yellow;
+    @include text-shadow(none);
+    }
+  //note
+  &.note {
+    background-color: $blue;
+    color: white;
+    @include text-shadow(0 -1px 0 darken($blue, 30%));
+    }
+  //success
+  &.success {
+    background-color: $green;
+    color: white;
+    @include text-shadow(0 -1px 0 darken($green, 10%));
+    }
+  //warning
+  &.warning {
+    background-color: $orange;
+    color: white;
+    @include text-shadow(0 -1px 0 darken($orange, 10%));
+    }
+  //error
+  &.error {
+    background-color: $red;
+    color: white;
+    @include text-shadow(0 -1px 0 darken($red, 15%));
+    }
+
+  [class^="icon-"] {line-height: .8em;}
+  }

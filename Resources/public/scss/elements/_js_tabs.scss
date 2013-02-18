@@ -1,0 +1,38 @@
+// Variables used:
+// 	$baseline_height
+// 	$light_grey
+//	black
+//	white
+
+ul.idTabs:before,ul.idTabs:after {content:"";display:table;}
+ul.idTabs:after {clear:both;}
+ul.idTabs {zoom:1;}
+ul.idTabs {
+	margin: 0;
+	border-bottom: 1px solid $light_grey;
+	li {
+		display: inline;
+		line-height: 1em;
+		a {
+			display: inline;
+			float: left;
+			margin: 0 $baseline_height/2 -1px 0;
+			padding: $baseline_height/2 $baseline_height*.75;
+			width: auto;
+			outline: none;
+			border: 1px solid $light_grey;
+			background-color: $light_grey;
+			&:hover {background-color: white;}
+			&.selected {
+				background-color: white;
+				border-bottom: 1px solid white;
+				color: black;
+				cursor: default;
+				}
+			}
+		}
+
+	} // end ul.idTabs
+
+//	tabs div
+div.tab {padding-top: $baseline_height/2;}

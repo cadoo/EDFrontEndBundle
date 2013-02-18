@@ -1,0 +1,37 @@
+// Variables used:
+// 	$text_size
+// 	$baseline_height
+// 	$light_grey
+//	black
+
+
+ul, ol, dl {
+	margin: 0 0 $baseline_height;
+	padding: 0;
+	font-size: $text_size;
+	line-height: 1.5em;
+	}
+ul {list-style: disc outside;}
+ol {list-style: decimal outside;}
+ul ul, ul ol, ol ul, ol ol {margin: 0;}
+	li, dd {margin-left: $baseline_height * 2;}
+	li ul, li ol {font-size: 1em;}
+	nav ul, nav ol {
+		margin: 0;
+		padding: 0;
+		list-style: none outside;
+		}
+	nav li {margin: 0; padding: 0; display: inline;}
+	/*nav[role="navigation"] li {display: block;}*/
+dt {
+	font-weight: bold;
+	margin-top: $baseline_height/2;
+	&:first-child {margin-top: 0;}
+	}
+
+//	lists with no bullets
+ul.no-bullets, ol.no-bullets {list-style: none outside;
+	li {margin-left: 0;
+		ul, ol {list-style: none outside; margin-left: $baseline_height*2;}
+		}
+	}

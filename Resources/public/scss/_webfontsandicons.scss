@@ -1,0 +1,35 @@
+//	Font-face syntax
+//	also, take a look at http://fontello.com/
+//	-----------------------------------------------------------
+// @font-face {
+// 	font-family: 'MyWebFont';
+// 	src: url('webfonts/MyWebFont.eot');
+// 	src: url('webfonts/MyWebFont.eot?#iefix') format('embedded-opentype'),
+// 		 url('webfonts/MyWebFont.woff') format('woff'),
+// 		 url('webfonts/MyWebFont.ttf') format('truetype'),
+// 		 url('webfonts/MyWebFont.svg#MyWebFont') format('svg');
+// 	font-weight: normal;
+// 	font-style: normal;
+// }
+
+//	then in _base.scss:
+//	$icon: MyWebFont;
+//	Usage: .someClass {font-family: $icon;}
+
+
+
+//	Google webfonts example
+//	-----------------------------------------------------------
+//	@import "http://fonts.googleapis.com/css?family=Squada+One";
+//	then in _base.scss:
+//	$squada: "Squada One", cursive;
+
+
+
+
+//	Font awesome
+//	(if you're using it don't forget about IE7 - add <!--[if IE 7]><link rel="stylesheet" href="css/webfonts/Font-Awesome/css/font-awesome-ie7.css"><![endif]--> in your <head>)
+//	-----------------------------------------------------------
+@import url(webfonts/Font-Awesome/css/font-awesome.css);
+// @import "http://fonts.googleapis.com/css?family=Open+Sans:300italic,800italic,800,300";
+// @import "http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,900";

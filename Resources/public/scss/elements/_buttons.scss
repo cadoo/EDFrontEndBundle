@@ -1,0 +1,155 @@
+// Variables used:
+// 		$text_size
+// 		$sans
+// 		$baseline_height
+// 		$grey
+// 		$border_radius
+// 		$blue
+// 		$red
+// 		$green
+
+a.button,
+a:link.button,
+a:visited.button {
+	display: inline-block;
+	padding: $baseline_height/4+1 $baseline_height/2;
+	border: 0;
+	background-color: $grey;
+	color: $dark_grey;
+	vertical-align: middle;
+	text-decoration: none;
+	font-size: $text_size;
+	line-height: normal !important;
+	@include border-radius($border_radius);
+	@include text-shadow(0 1px 0 #fff);
+	&:hover {
+		background-color: $light_grey;
+		}
+	&:active {@include clicky;}
+
+	// block button
+	&.block {display: block;}
+	&.center {text-align: center;}
+
+	// big button
+	&.big {font-size: $text_size*1.4; @include border-radius($border_radius*1.4);}
+	// small button
+	&.small {font-size: $text_size/1.2; @include border-radius($border_radius/1.2);}
+	// bold button
+	&.bold {font-weight: bold; text-transform: uppercase;}
+
+	// action button
+	&.action {
+		background-color: $blue;
+		color: #fff;
+		@include text-shadow(0 -1px 0 darken($blue, 30%));
+		&:hover {
+			background-color: darken($blue, 15%);
+			@include text-shadow(0 -1px 0 darken($blue, 30%));
+			}
+		}
+
+	// success button
+	&.success {
+		background-color: $green;
+		color: #fff;
+		@include text-shadow(0 -1px 0 darken($green, 20%));
+		&:hover {
+			background-color: darken($green, 8%);
+			@include text-shadow(0 -1px 0 darken($green, 30%));
+			}
+		}
+	// error button
+	&.error {
+		background-color: $red;
+		color: #fff;
+		@include text-shadow(0 -1px 0 darken($red, 20%));
+		&:hover {
+			background-color: darken($red, 15%);
+			@include text-shadow(0 -1px 0 darken($red, 30%));
+			}
+		}
+
+	// twitter colors button
+	&.twitter {
+		background-color: #0cf;
+		padding: $baseline_height/4 $baseline_height/3;
+		color: #fff;
+		@include text-shadow(none);
+		&:hover {
+			background-color: darken(#0cf, 5%);
+			}
+		[class^="icon-"] {width: 1em; margin: 0; text-align: center;}
+		}
+
+	// rss colors button
+	&.rss {
+		background-color: #f90;
+		padding: $baseline_height/4 $baseline_height/3;
+		color: #fff;
+		@include text-shadow(none);
+		&:hover {
+			background-color: darken(#f90, 5%);
+			}
+		[class^="icon-"] {width: 1em; margin: 0; text-align: center;}
+		}
+
+	// facebook colors button
+	&.facebook {
+		background-color: #3B5998;
+		padding: $baseline_height/4 $baseline_height/3;
+		color: #fff;
+		@include text-shadow(none);
+		&:hover {
+			background-color: darken(#3B5998, 5%);
+			}
+		[class^="icon-"] {width: 1em; margin: 0; text-align: center;}
+		}
+
+	// linkedin colors button
+	&.linkedin {
+		background-color: #3894C1;
+		padding: $baseline_height/4 $baseline_height/3;
+		color: #fff;
+		@include text-shadow(none);
+		&:hover {
+			background-color: darken(#3894C1, 5%);
+			}
+		[class^="icon-"] {width: 1em; margin: 0; text-align: center;}
+		}
+
+	[class^="icon-"] {line-height: .8; margin: 0 .1em;} // for icons
+	} // end .button
+
+//	Button group
+.button-group {
+	overflow: hidden;
+	a.button,
+	a:link.button,
+	a:visited.button {
+		float: left;
+		display: inline;
+		width: auto;
+		padding: $baseline_height/4 $baseline_height/2;
+		&:active {top: 0;}
+		@include border-radius(0);
+		&:first-child {@include border-top-left-radius($border_radius); @include border-bottom-left-radius($border_radius);}
+		&:last-child {@include border-top-right-radius($border_radius); @include border-bottom-right-radius($border_radius);}
+		&.current {
+			cursor: default;
+			background-color: $light_grey;
+			position: relative;
+			z-index: 0;
+			}
+		[class^="icon-"] {margin: 0;}
+		}
+	}
+
+p, li, table, form {
+	a.button,
+	a:link.button,
+	a:visited.button {font-size: 1em;}
+}
+
+
+

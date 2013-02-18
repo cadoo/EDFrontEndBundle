@@ -1,0 +1,279 @@
+//  REMEMBER - Mobile first
+
+//  =SCSS Imports
+//  (See _base.scss for variables and mixins used)
+//  ------------------------------------------------------
+@import "base";
+
+//  =Additional reset styles and html elements defaults
+//  ------------------------------------------------------
+*, *:after, *:before {@include box-sizing(border-box);} // box sizing model
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {text-align: left;}
+img {border: 0; max-width: 100% !important;}
+label {cursor: pointer;}
+textarea {resize: vertical;}
+code {line-height: 1em; font-family: $mono;}
+img {vertical-align: middle;}
+//  some rarely used elements:
+hr {
+  clear: both;
+  overflow: hidden;
+  margin: $baseline_height 0;
+  height: 1px;
+  border: 0;
+  background-color: $light_grey;
+  }
+blockquote {
+  margin: 0 0 $baseline_height;
+  padding-left: $baseline_height;
+  border-left: 1px solid $light_grey;
+  cite {font-size: $text_size*.875;}
+  }
+pre {
+  margin: 0 0 $baseline_height;
+  padding: $baseline_height*.75;
+  background-color: #f5f5f5;
+  font-size: $text_size;
+  font-family: $mono;
+  }
+
+//  =Helper classes
+//  ------------------------------------------------------
+.clear {clear: both;}
+.hide {display: none !important;}
+.invisible {visibility: hidden !important;}
+.destroy {display: none !important; visibility: hidden !important;}
+.center {text-align: center;}
+.aleft {text-align: left;}
+.aright {text-align: right;}
+.flleft {float: left; display: inline; width: auto;}
+.flright {float: right; display: inline; width: auto;}
+// clearfix
+.clearfix:before,.clearfix:after {content:"";display:table;}
+.clearfix:after {clear:both;}
+.clearfix {zoom:1;}
+
+//  =Classes & Other
+//  ------------------------------------------------------
+::-moz-selection {background: $dark_grey; color: #fff; text-shadow: none;}
+::selection {background: $dark_grey; color: #fff; text-shadow: none;}
+.toggle {cursor: pointer;}
+.toggle-controls {
+  position: absolute;
+  top: 20px;
+  right: 0;
+  font-size: $text_size*1.5;
+  display: none;
+  }
+a.back-to-top {
+  @include transition-property(none);
+  position: fixed;
+  right: $baseline_height;
+  bottom: $baseline_height;
+  display: none;
+  font-size: $text_size;
+  cursor: pointer;
+  }
+
+
+//  ------------------------------------------------------------------------------------------------------------
+//  =Actual start
+//  ------------------------------------------------------------------------------------------------------------
+html {background-color: $background_html; color: $dark_grey; font-size: 16px;}
+body {background-color: $background_body; font-family: $sans; font-size: 100%; text-align: center;}
+
+//  =Defaults
+//  ------------------------------------------------------
+h1, h2, h3, h4, h5, h6 {
+  position: relative;
+  margin: 0 0 $baseline_height;
+  letter-spacing: -.02em;
+  font-weight: normal;
+  line-height: 1;
+  small {
+    color: lighten($dark_grey, 20%);
+    font-size: .6em;
+    }
+  &.title {
+    padding-bottom: $baseline_height/2;
+    border-bottom: 1px solid $light_grey;
+    }
+  }
+h1 {font-size: $text_size * 2.125;}
+h2 {font-size: $text_size * 1.75;}
+h3 {font-size: $text_size * 1.5;}
+h4 {font-size: $text_size * 1.25; font-weight: bold;}
+h5 {font-size: $text_size; font-weight: bold;}
+h6 {font-size: $text_size * 0.875; font-weight: bold;}
+p {
+  margin: 0 0 $baseline_height;
+  font-size: $text_size;
+  line-height: 1.5em;
+  }
+a {
+  @include transition-property(all);
+  @include transition-duration(.15s);
+  text-decoration: none;
+  &, &:link, &:visited {color: $link_color;}
+  &:hover, &:active {color: $link_hover;}
+  }
+
+//  =Layout
+//  ------------------------------------------------------
+//  =Header
+//  ---------------------------------
+header[role="banner"] {
+  position: relative;
+  &:before,
+  &:after {content:"";display:table;}
+  &:after {clear:both;}
+  & {zoom:1;}
+  .logo {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    text-indent: -99999em;
+    background: image-url('logo.png') no-repeat 0 0;
+//    @include at2x('#{$path}/logo', 'png', 100px, 100px);
+    }
+  &.expanded {}
+  }
+//  =Content
+//  ---------------------------------
+[role="main"] {}
+//  =Sidebar
+//  ---------------------------------
+[role="complementary"] {}
+//  =Footer
+//  ---------------------------------
+footer {clear: both;}
+footer[role="contentinfo"] {
+  small {
+    font-size: $text_size*.75;
+    display: block;
+    }
+  }
+
+//  =Typography & styling
+//  ------------------------------------------------------
+//  =H1
+//  ---------------------------------
+//  =H2
+//  ---------------------------------
+//  =H3
+//  ---------------------------------
+//  =H4
+//  ---------------------------------
+//  =H5
+//  ---------------------------------
+//  =H6
+//  ---------------------------------
+//  =P
+//  ---------------------------------
+
+//  =Page elements (import only ones you need)
+//  ------------------------------------------------------
+@import "elements/lists";       // Lists
+@import "elements/forms";       // Forms
+@import "elements/tables";      // Tables
+@import "elements/buttons";     // Buttons
+@import "elements/pagination";  // Pagination
+@import "elements/labels";      // Labels
+@import "elements/alerts";      // Alerts
+@import "elements/images";      // Images
+@import "elements/js_tabs";     // Tabs
+@import "elements/js_slider";   // Slider
+@import "elements/js_modal";    // Modal
+
+
+//  ------------------------------------------------------
+//  =Specific layout elements
+//  ------------------------------------------------------
+
+//  =Lists (nav, ul, ol, dl)
+//  ---------------------------------
+// main navigation
+nav[role="navigation"] {
+  clear: both;
+  ul {
+    border-top: 1px solid $light_grey;
+    ul {
+      display: none;
+      border: 0;
+      }
+    }
+  li {
+    position: relative;
+    z-index: 1;
+    display: block;
+    a {
+      display: block;
+      border-bottom: 1px solid $light_grey;
+      line-height: $baseline_height*2;
+      &:hover {background-color: #ddd;}
+      }
+    i {
+      border: 1px solid $light_grey;
+      border-width: 0 0 0 1px;
+      position: absolute;
+      top: 0;
+      right: 0;
+      padding: 0 $baseline_height/1.5;
+      font-style: normal;
+      font-size: 0.7em;
+      font-family: FontAwesome;
+      line-height: $baseline_height*2;
+      cursor: pointer;
+      &:hover {background-color: #ddd;}
+      &:before {content: "\f078";}
+      &.expanded:before {content: "\f077";}
+      }
+    }
+  }
+
+//  =Forms
+//  ------------------------------------------------------
+
+//  =Tables
+//  ------------------------------------------------------
+
+
+
+
+//  No need to change anything below this line
+//  ------------------------------------------------------
+@import "grid/grid";
+//  ####### Responsive ########################################################
+//  ####### 768px #################################
+@media only screen and (min-width: 768px) {
+  @import "grid/grid768";
+  @import "screen768";
+}// ####### END 768px
+//  ####### 980px #################################
+@media only screen and (min-width: 1024px) {
+  @import "grid/grid1008";
+  @import "screen1008";
+}// ####### END 980px
+//  ####### 1230px ################################
+@media only screen and (min-width: 1280px) {
+  @import "grid/grid1230";
+  @import "screen1230";
+}// ####### END 1230px
+//  ####### END Responsive #####################################################
+
+//  =Print styles
+//  ------------------------------------------------------
+@media print {
+  * { background: transparent !important; color: black !important; text-shadow: none !important; filter:none !important; -ms-filter: none !important; text-align: left !important;}
+  a, a:visited { text-decoration: underline; }
+  a[href]:after { content: " (" attr(href) ")"; }
+  abbr[title]:after { content: " (" attr(title) ")"; }
+  .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after { content: ""; }
+  pre, blockquote { border: 1px solid #999; page-break-inside: avoid; }
+  thead { display: table-header-group; }
+  tr, img { page-break-inside: avoid; }
+  img { max-width: 100% !important; }
+  @page { margin: 0.5cm; }
+  p, h2, h3 { orphans: 3; widows: 3; }
+  h2, h3 { page-break-after: avoid; }
+}

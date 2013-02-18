@@ -1,0 +1,74 @@
+//  =Classes & Other
+//  ------------------------------------------------------
+//  =Layout
+//  ------------------------------------------------------
+//  =Header
+//  ---------------------------------
+header[role="banner"] {
+  .logo {
+    float: left;
+  }
+}
+
+//  ------------------------------------------------------
+//  =Specific layout elements
+//  ------------------------------------------------------
+
+//  =Lists (nav, ul, ol, dl)
+//  ---------------------------------
+// main navigation
+nav[role="navigation"] {
+  clear: none;
+  float: right;
+  ul {
+    border: 0;
+    }
+  li {
+    display: inline;
+    float: left;
+    i {
+      float: left;
+      position: static;
+      border: 0;
+      }
+    a {
+      border-bottom: 0;
+      float: left;
+      display: inline;
+      padding: 0 $baseline_height/2;
+      }
+    ul {
+      position: absolute;
+      top: $baseline_height*2;
+      display: none;
+      width: 200px;
+      border: 0;
+      ul {
+        position: absolute;
+        top: 0;
+        left: 100%;
+        }
+      li {
+        position: relative;
+        display: block;
+        float: none;
+        i {
+          position: absolute;
+          top: 0;
+          right: 0;
+          }
+        }
+      a {
+        display: block;
+        float: none;
+        }
+      }
+    }
+  }
+
+//  =Forms
+//  ---------------------------------
+header[role="banner"] form {
+  float: right;
+  clear: right;
+  }

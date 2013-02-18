@@ -1,0 +1,112 @@
+// Variables used:
+// 	$text_size
+// 	$baseline_height
+// 	$light_grey
+// 	$dark_grey
+
+figure {
+	display: block;
+	overflow: hidden;
+	margin: 0 0 $baseline_height;
+	padding: $baseline_height/2;
+	width: auto;
+	border: 1px solid $light_grey;
+	color: lighten($dark_grey, 15%);
+	text-align: center;
+	img {
+		margin: 0 auto;
+		}
+	figcaption {
+		display: block;
+		margin-top: $text_size/2.6;
+		text-align: center;
+		word-wrap: break-word;
+		font-size: $text_size*.75;
+		}
+	&.flleft {
+		display: inline;
+		float: left;
+		clear: left;
+		margin: $text_size/4 $text_size $text_size/4 0;
+		width: auto;
+		}
+	&.flright {
+		float: right;
+		clear: right;
+		display: inline;
+		width: auto;
+		margin: $text_size/4 0 $text_size/4 $text_size;
+		}
+	}
+//  thumbnails
+a.thumbnail {
+	@include transition-property(all);
+	margin: 0 0 $baseline_height;
+	padding: $baseline_height/2;
+	border: 1px solid $light_grey;
+	display: block;
+	text-align: center;
+	&.flleft {
+		display: inline;
+		float: left;
+		clear: left;
+		margin: $text_size/4 $text_size $text_size/4 0;
+		width: auto;
+		}
+	&.flright {
+		display: inline;
+		float: right;
+		clear: right;
+		margin: $text_size/4 0 $text_size/4 $text_size;
+		width: auto;
+		}
+	&:hover {border: 1px solid black;}
+	}
+//  plain images
+img.thumbnail {
+	@include transition-property(all);
+	margin: 0 auto $baseline_height;
+	padding: $baseline_height/2;
+	border: 1px solid $light_grey;
+	display: block;
+	text-align: center;
+	&.flleft {
+		display: inline;
+		float: left;
+		clear: left;
+		margin: $text_size/4 $text_size $text_size/4 0;
+		width: auto;
+		}
+	&.flright {
+		display: inline;
+		float: right;
+		clear: right;
+		margin: $text_size/4 0 $text_size/4 $text_size;
+		width: auto;
+		}
+	}
+// thumbnail galleries, for four in a row and three in a row. Add As much as you like
+ul.gallery {
+	list-style: none;
+	overflow: hidden;
+	margin-left: -2%;
+	li {
+		display: inline;
+		margin: 0;
+		}
+	a {
+		float: left;
+		margin: 0 0 2% 2%;
+		padding: $baseline_height/2;
+		border: 1px solid $light_grey;
+		&:hover {border-color: black;}
+		}
+	&.three-col a {
+		width: 31.33%;
+		}
+	&.three-col li:nth-child(3n+1) a {clear: left;}
+	&.four-col a {
+		width: 23%;
+		}
+	&.four-col li:nth-child(4n+1) a {clear: left;}
+	}
