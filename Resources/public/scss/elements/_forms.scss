@@ -12,6 +12,7 @@
 
 form {
   margin: 0 0 $baseline_height;
+  overflow: hidden;
   h1, h2, h3, h4, h5, h6 {margin: $baseline_height/2 0;}
   p {
     clear: both;
@@ -66,7 +67,7 @@ form {
       margin-right: 2%;
       input[type="checkbox"],
       input[type="radio"] {
-        margin-top: $text_size/16;
+        margin-top: $text_size/6;
         }
       }
     }
@@ -214,7 +215,7 @@ form {
       text-align: left;
       input[type="checkbox"],
       input[type="radio"] {
-        margin: $text_size/16 $text_size/4 0 -22px;
+        margin: $text_size/6 $text_size/4 0 -22px;
         }
       input[type="radio"] {
         margin: $text_size/20 $text_size/4 0 -22px;
@@ -225,7 +226,6 @@ form {
         float: left;
         clear: none;
         margin: 0 2% 0 0;
-        width: auto;
         white-space: nowrap;
         }
       }

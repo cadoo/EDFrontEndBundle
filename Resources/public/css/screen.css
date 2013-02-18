@@ -97,7 +97,7 @@ figure {
   margin: 0; }
 
 fieldset {
-  border: 1px solid silver;
+  border: 1px solid #c0c0c0;
   margin: 0 2px;
   padding: 0.35em 0.625em 0.75em; }
 
@@ -194,13 +194,13 @@ blockquote {
   padding-left: 16px;
   border-left: 1px solid #eeeeee; }
   blockquote cite {
-    font-size: 0.875em; }
+    font-size: 0.76563em; }
 
 pre {
   margin: 0 0 16px;
   padding: 12px;
   background-color: #f5f5f5;
-  font-size: 1em;
+  font-size: 0.875em;
   font-family: Monaco, Consolas, "Bitstream Vera Sans Mono", "Andale Mono", "DejaVu Sans Mono", "Lucida Console", monospace; }
 
 .clear {
@@ -262,8 +262,7 @@ pre {
   position: absolute;
   top: 20px;
   right: 0;
-  font-size: 1.5em;
-  display: none; }
+  font-size: 1.3125em; }
 
 a.back-to-top {
   -webkit-transition-property: none;
@@ -273,8 +272,7 @@ a.back-to-top {
   position: fixed;
   right: 16px;
   bottom: 16px;
-  display: none;
-  font-size: 1em;
+  font-size: 0.875em;
   cursor: pointer; }
 
 html {
@@ -291,7 +289,7 @@ body {
 h1, h2, h3, h4, h5, h6 {
   position: relative;
   margin: 0 0 16px;
-  letter-spacing: -.02em;
+  letter-spacing: -0.02em;
   font-weight: normal;
   line-height: 1; }
   h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {
@@ -300,31 +298,42 @@ h1, h2, h3, h4, h5, h6 {
   h1.title, h2.title, h3.title, h4.title, h5.title, h6.title {
     padding-bottom: 8px;
     border-bottom: 1px solid #eeeeee; }
+  h1.toggle i, h2.toggle i, h3.toggle i, h4.toggle i, h5.toggle i, h6.toggle i {
+    display: inline-block;
+    vertical-align: top;
+    margin-top: .2em;
+    font-style: normal;
+    font-size: 0.7em;
+    font-family: FontAwesome; }
+    h1.toggle i:before, h2.toggle i:before, h3.toggle i:before, h4.toggle i:before, h5.toggle i:before, h6.toggle i:before {
+      content: "\f055"; }
+  h1.toggle.collapsed i:before, h2.toggle.collapsed i:before, h3.toggle.collapsed i:before, h4.toggle.collapsed i:before, h5.toggle.collapsed i:before, h6.toggle.collapsed i:before {
+    content: "\f056"; }
 
 h1 {
-  font-size: 2.125em; }
+  font-size: 1.85938em; }
 
 h2 {
-  font-size: 1.75em; }
+  font-size: 1.53125em; }
 
 h3 {
-  font-size: 1.5em; }
+  font-size: 1.3125em; }
 
 h4 {
-  font-size: 1.25em;
+  font-size: 1.09375em;
   font-weight: bold; }
 
 h5 {
-  font-size: 1em;
+  font-size: 0.875em;
   font-weight: bold; }
 
 h6 {
-  font-size: 0.875em;
+  font-size: 0.76563em;
   font-weight: bold; }
 
 p {
   margin: 0 0 16px;
-  font-size: 1em;
+  font-size: 0.875em;
   line-height: 1.5em; }
 
 a {
@@ -356,19 +365,24 @@ header[role="banner"] {
     width: 100px;
     height: 100px;
     text-indent: -99999em;
-    background: url('../images/logo.png?1360830465') no-repeat 0 0; }
+    background: url("../images/logo.png") no-repeat 0 0;
+    background-image: url("../images/logo.png"); }
+    @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+      header[role="banner"] .logo {
+        background-image: url("../images/logo@2x.png");
+        background-size: 100px 100px; } }
 
 footer {
   clear: both; }
 
 footer[role="contentinfo"] small {
-  font-size: 0.75em;
+  font-size: 0.65625em;
   display: block; }
 
 ul, ol, dl {
   margin: 0 0 16px;
   padding: 0;
-  font-size: 1em;
+  font-size: 0.875em;
   line-height: 1.5em; }
 
 ul {
@@ -412,19 +426,20 @@ ul.no-bullets, ol.no-bullets {
       margin-left: 32px; }
 
 form {
-  margin: 0 0 16px; }
+  margin: 0 0 16px;
+  overflow: hidden; }
   form h1, form h2, form h3, form h4, form h5, form h6 {
     margin: 8px 0; }
   form p {
     clear: both;
     padding-top: 5px;
-    font-size: 1em; }
+    font-size: 0.875em; }
     form p.hint {
       margin-top: -4px;
       margin-bottom: 4px;
       padding-top: 0;
       color: #848484;
-      font-size: 0.875em; }
+      font-size: 0.76563em; }
   form div.form-fields {
     clear: both;
     overflow: hidden; }
@@ -436,13 +451,13 @@ form {
         margin-bottom: 4px;
         padding-top: 0;
         color: #848484;
-        font-size: 0.875em; }
+        font-size: 0.76563em; }
     form div.form-fields input, form div.form-fields button, form div.form-fields textarea, form div.form-fields select, form div.form-fields span.icon {
       margin-top: 0; }
   form legend {
     margin: 0 0 8px;
     font-weight: bold;
-    font-size: 1em; }
+    font-size: 0.875em; }
   form fieldset {
     margin: 0;
     padding: 0;
@@ -452,7 +467,7 @@ form {
     overflow: visible;
     margin: 0 0 4px;
     padding-top: 5px;
-    font-size: 1em;
+    font-size: 0.875em;
     line-height: 1.2em; }
     form label.inline {
       float: left;
@@ -462,7 +477,7 @@ form {
       margin-right: 2%; }
       form label.inline input[type="checkbox"],
       form label.inline input[type="radio"] {
-        margin-top: 0.0625em; }
+        margin-top: 0.14583em; }
   form input[type="text"],
   form input[type="pasword"],
   form input[type="search"],
@@ -477,7 +492,7 @@ form {
   form input, form button, form textarea, form select, form span.icon {
     margin-top: 8px;
     margin-bottom: 8px;
-    font-size: 1em;
+    font-size: 0.875em;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     /*line-height: normal !important; */
     color: #444444;
@@ -558,7 +573,7 @@ form {
     form input[type="checkbox"], form input[type="radio"], form button[type="checkbox"], form button[type="radio"], form textarea[type="checkbox"], form textarea[type="radio"], form select[type="checkbox"], form select[type="radio"], form span.icon[type="checkbox"], form span.icon[type="radio"] {
       float: left;
       display: inline;
-      margin: 0 0.25em 0 0;
+      margin: 0 0.21875em 0 0;
       padding: 0;
       border: 0;
       width: 13px;
@@ -638,16 +653,15 @@ form {
       form div.checkbox-group label input[type="radio"],
       form div.radio-group label input[type="checkbox"],
       form div.radio-group label input[type="radio"] {
-        margin: 0.0625em 0.25em 0 -22px; }
+        margin: 0.14583em 0.21875em 0 -22px; }
       form div.checkbox-group label input[type="radio"],
       form div.radio-group label input[type="radio"] {
-        margin: 0.05em 0.25em 0 -22px; }
+        margin: 0.04375em 0.21875em 0 -22px; }
     form div.checkbox-group.inline label,
     form div.radio-group.inline label {
       float: left;
       clear: none;
       margin: 0 2% 0 0;
-      width: auto;
       white-space: nowrap; }
   form div.form-fields.inline {
     margin: 0 0 5.33333px; }
@@ -796,7 +810,7 @@ form {
 table {
   margin: 0 0 16px;
   width: 100%;
-  font-size: 1em; }
+  font-size: 0.875em; }
   table tr, table th, table td, table caption {
     padding: 5.33333px 8px;
     border: 1px solid #eeeeee; }
@@ -843,7 +857,7 @@ a:visited.button {
   color: #444444;
   vertical-align: middle;
   text-decoration: none;
-  font-size: 1em;
+  font-size: 0.875em;
   line-height: normal !important;
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
@@ -871,7 +885,7 @@ a:visited.button {
   a.button.big,
   a:link.button.big,
   a:visited.button.big {
-    font-size: 1.4em;
+    font-size: 1.225em;
     -webkit-border-radius: 2.8px;
     -moz-border-radius: 2.8px;
     -ms-border-radius: 2.8px;
@@ -880,7 +894,7 @@ a:visited.button {
   a.button.small,
   a:link.button.small,
   a:visited.button.small {
-    font-size: 0.83333em;
+    font-size: 0.72917em;
     -webkit-border-radius: 1.66667px;
     -moz-border-radius: 1.66667px;
     -ms-border-radius: 1.66667px;
@@ -996,7 +1010,7 @@ a:visited.button {
   a:link.button [class^="icon-"],
   a:visited.button [class^="icon-"] {
     line-height: .8;
-    margin: 0 0.1em; }
+    margin: 0 .1em; }
 
 .button-group {
   overflow: hidden; }
@@ -1073,7 +1087,7 @@ div.pagination {
     color: #444444;
     vertical-align: middle;
     text-decoration: none;
-    font-size: 1em;
+    font-size: 0.875em;
     line-height: normal !important;
     -webkit-border-radius: 0;
     -moz-border-radius: 0;
@@ -1245,9 +1259,9 @@ a.label {
   a.label.badge {
     font-size: 10px;
     font-weight: bold;
-    margin-top: -.6em;
-    margin-bottom: -.25em;
-    padding: 0.2em 0.5em 0.3em;
+    margin-top: -0.6em;
+    margin-bottom: -0.25em;
+    padding: .2em .5em .3em;
     display: inline-block;
     vertical-align: middle;
     -webkit-border-radius: 6px;
@@ -1367,22 +1381,22 @@ figure {
     margin: 0 auto; }
   figure figcaption {
     display: block;
-    margin-top: 0.38462em;
+    margin-top: 0.33654em;
     text-align: center;
     word-wrap: break-word;
-    font-size: 0.75em; }
+    font-size: 0.65625em; }
   figure.flleft {
     display: inline;
     float: left;
     clear: left;
-    margin: 0.25em 1em 0.25em 0;
+    margin: 0.21875em 0.875em 0.21875em 0;
     width: auto; }
   figure.flright {
     float: right;
     clear: right;
     display: inline;
     width: auto;
-    margin: 0.25em 0 0.25em 1em; }
+    margin: 0.21875em 0 0.21875em 0.875em; }
 
 a.thumbnail {
   -webkit-transition-property: all;
@@ -1398,13 +1412,13 @@ a.thumbnail {
     display: inline;
     float: left;
     clear: left;
-    margin: 0.25em 1em 0.25em 0;
+    margin: 0.21875em 0.875em 0.21875em 0;
     width: auto; }
   a.thumbnail.flright {
     display: inline;
     float: right;
     clear: right;
-    margin: 0.25em 0 0.25em 1em;
+    margin: 0.21875em 0 0.21875em 0.875em;
     width: auto; }
   a.thumbnail:hover {
     border: 1px solid black; }
@@ -1423,13 +1437,13 @@ img.thumbnail {
     display: inline;
     float: left;
     clear: left;
-    margin: 0.25em 1em 0.25em 0;
+    margin: 0.21875em 0.875em 0.21875em 0;
     width: auto; }
   img.thumbnail.flright {
     display: inline;
     float: right;
     clear: right;
-    margin: 0.25em 0 0.25em 1em;
+    margin: 0.21875em 0 0.21875em 0.875em;
     width: auto; }
 
 ul.gallery {
@@ -1490,6 +1504,34 @@ ul.idTabs {
 
 div.tab {
   padding-top: 8px; }
+
+nav.sticky {
+  border: 1px solid #eeeeee;
+  border-width: 1px 0;
+  overflow: hidden;
+  background-color: #fff; }
+  nav.sticky li {
+    display: inline; }
+    nav.sticky li a {
+      float: left;
+      padding: 0 16px 0 0;
+      font-weight: bold;
+      line-height: 32px; }
+      nav.sticky li a:hover {
+        color: #f00; }
+      nav.sticky li a.active {
+        color: #f00; }
+    nav.sticky li:first-child a {
+      border-left: 0; }
+
+.stuck {
+  position: fixed;
+  top: 0;
+  z-index: 1000; }
+  @media (max-width: 768px) {
+    .stuck {
+      left: 20px;
+      right: 20px; } }
 
 .flexslider {
   position: relative; }
@@ -1674,7 +1716,6 @@ nav[role="navigation"] {
   nav[role="navigation"] ul {
     border-top: 1px solid #eeeeee; }
     nav[role="navigation"] ul ul {
-      display: none;
       border: 0; }
   nav[role="navigation"] li {
     position: relative;
@@ -1684,8 +1725,6 @@ nav[role="navigation"] {
       display: block;
       border-bottom: 1px solid #eeeeee;
       line-height: 32px; }
-      nav[role="navigation"] li a:hover {
-        background-color: #ddd; }
     nav[role="navigation"] li i {
       border: 1px solid #eeeeee;
       border-width: 0 0 0 1px;
@@ -1698,8 +1737,6 @@ nav[role="navigation"] {
       font-family: FontAwesome;
       line-height: 32px;
       cursor: pointer; }
-      nav[role="navigation"] li i:hover {
-        background-color: #ddd; }
       nav[role="navigation"] li i:before {
         content: "\f078"; }
       nav[role="navigation"] li i.expanded:before {
@@ -2156,7 +2193,7 @@ nav[role="navigation"] {
     content: ""; }
 
   pre, blockquote {
-    border: 1px solid #999999;
+    border: 1px solid #999;
     page-break-inside: avoid; }
 
   thead {

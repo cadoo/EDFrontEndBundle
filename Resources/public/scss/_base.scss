@@ -10,9 +10,10 @@ $orange          : #fab40b;
 $red             : #e53e3e;
 $yellow          : #fbfb54;
 //  Sizes
-$text_size       :   1em;               // Text size
-$baseline_height :  16px;               // baseline height. 16px is great
-$border_radius   :   2px;               // Border radius (duh!)
+$text_size       : 0.875em;             // 14px Text size
+//$text_size       : 1em;                 // 16px Text size
+$baseline_height : 16px;                // baseline height. 16px is great
+$border_radius   : 2px;                 // Border radius (duh!)
 //  Document Colors
 $text_color      : $dark_grey;          // Text color
 $background_html : white;               // Background color HTML
@@ -55,7 +56,7 @@ $path            : "../images";         // Path to images
 }
 
 //  perfect background image
-//  usage @include background-cover("image.png");
+//  usage
 @mixin background-cover($imgpath) {
   background: url(#{$imgpath}) no-repeat center center fixed;
   filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='#{$imgpath}', sizingMethod='scale');

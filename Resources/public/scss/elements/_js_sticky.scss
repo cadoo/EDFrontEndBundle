@@ -1,0 +1,27 @@
+nav.sticky {
+  border: 1px solid $light_grey;
+  border-width: 1px 0;
+  overflow: hidden;
+  background-color: #fff;
+  li {
+    display: inline;
+    a {
+      float: left;
+      padding: 0 $baseline_height 0 0;
+      font-weight: bold;
+      line-height: $baseline_height*2;
+      &:hover {color: #f00;}
+      &.active {color: #f00;}
+      }
+    &:first-child a {border-left: 0;}
+    }
+  }
+.stuck {
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  @media (max-width: 768px) {
+    left: 20px;
+    right: 20px;
+    }
+  }

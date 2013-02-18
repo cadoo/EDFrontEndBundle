@@ -1,0 +1,790 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"div",
+				"div	div class"
+			],
+			[
+				"mh",
+				"mh	min-height: length"
+			],
+			[
+				"tt",
+				"tt	text-transform: lower"
+			],
+			[
+				"ls",
+				"ls	list-style: style position url"
+			],
+			[
+				"po",
+				"po	position: relative"
+			],
+			[
+				"cu",
+				"cu	cursor: default"
+			],
+			[
+				"fw",
+				"fw	font-weight: normal"
+			],
+			[
+				"ws",
+				"ws	white-space: normal"
+			],
+			[
+				"mw",
+				"mw	max-width: length"
+			],
+			[
+				"bw",
+				"bw	border-width: V H"
+			],
+			[
+				"a",
+				"a	a (link) short"
+			],
+			[
+				"inp",
+				"inp	input (long)"
+			],
+			[
+				"bc",
+				"bc	border-color: hex"
+			],
+			[
+				"p",
+				"p: <p>"
+			],
+			[
+				"pt",
+				"pt: padding-top"
+			],
+			[
+				"mb",
+				"mb: margin-bottom"
+			],
+			[
+				"fs",
+				"fs: font-size"
+			],
+			[
+				"c",
+				"c: color: hex"
+			],
+			[
+				"mt",
+				"mt: margin-top"
+			],
+			[
+				"bgc",
+				"bgc: background-color: hex"
+			],
+			[
+				"m",
+				"m: margin"
+			],
+			[
+				"bg",
+				"bg: background"
+			],
+			[
+				"bgp",
+				"bgp: background-position"
+			],
+			[
+				"h",
+				"h: height"
+			],
+			[
+				"ti",
+				"ti: text-indent"
+			],
+			[
+				"lh",
+				"lh: line-height"
+			],
+			[
+				"li",
+				"li: list li"
+			],
+			[
+				"ul",
+				"ul: list ul"
+			],
+			[
+				"w",
+				"w: width"
+			],
+			[
+				"z",
+				"z: z-index: index"
+			],
+			[
+				"span",
+				"span: <span>"
+			],
+			[
+				"mr",
+				"mr: margin-right"
+			],
+			[
+				"b",
+				"b: border"
+			],
+			[
+				"cl",
+				"cl: clear: both"
+			],
+			[
+				"ff",
+				"ff: font-family"
+			],
+			[
+				"ov",
+				"ov: overflow: visible"
+			],
+			[
+				"ml",
+				"ml: margin-left"
+			],
+			[
+				"tsh",
+				"tsh: text shadow"
+			],
+			[
+				"pl",
+				"pl: padding-left"
+			],
+			[
+				"pb",
+				"pb: padding-bottom"
+			],
+			[
+				"bgi",
+				"bgi: background-image"
+			],
+			[
+				"tal",
+				"tal: text-align: left"
+			],
+			[
+				"pr",
+				"pr: padding-right"
+			],
+			[
+				"br",
+				"br: border-right"
+			],
+			[
+				"form",
+				"form: <form>"
+			],
+			[
+				"d",
+				"d: display: inline"
+			],
+			[
+				"bsh",
+				"bsh: Box shadow"
+			]
+		]
+	},
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 375.0,
+		"selected_items":
+		[
+			[
+				"rem",
+				"Package Control: Remove Package"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"pret",
+				"HTMLPrettify: Prettify"
+			],
+			[
+				"pre",
+				"HTMLPrettify: Prettify"
+			],
+			[
+				"dif",
+				"Set Syntax: Diff"
+			],
+			[
+				"pac",
+				"Package Control: List Packages"
+			],
+			[
+				"in",
+				"Package Control: Install Package"
+			],
+			[
+				"lowe",
+				"Convert Case: Lower Case"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"p",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 579.0
+	},
+	"console":
+	{
+		"height": 136.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Volumes/Data/Dropbox/shared/EDFrontEndBundle/Resources/public/scss/screen.scss",
+		"/Users/Dusan/Desktop/_base.scss",
+		"/Users/Dusan/Library/Application Support/Sublime Text 2/Packages/SublimeLinter/SublimeLinter.sublime-settings",
+		"/Applications/MAMP/htdocs/Masilo2/apps/frontend/config/view.yml",
+		"/Applications/MAMP/htdocs/Masilo2/cache/frontend/dev/config/modules_account_config_view.yml.php",
+		"/Applications/MAMP/htdocs/Masilo2/web/js/global.js",
+		"/Applications/MAMP/htdocs/Masilo2/plugins/edCommentsPlugin/web/js/ed-comments.js",
+		"/Applications/MAMP/htdocs/Masilo2/web/edCommentsPlugin/js/ed-comments.js",
+		"/Volumes/Data/Dropbox/shared/ED-starter-framework/scss/_screen1008.scss",
+		"/Applications/MAMP/htdocs/Masilo2/web/scss/screen.scss",
+		"/Volumes/Data/Dropbox/shared/ED-starter-framework/scss/grid/_grid1008.scss",
+		"/Applications/MAMP/htdocs/Masilo2/apps/frontend/modules/profilebuilder/templates/step1Success.php",
+		"/Applications/MAMP/htdocs/Masilo2/apps/frontend/modules/feed/templates/_companyfeed.php",
+		"/Applications/MAMP/htdocs/Masilo2/apps/frontend/modules/feed/templates/_feedtype13.php",
+		"/Applications/MAMP/htdocs/Masilo2/apps/frontend/modules/browse/templates/fundsSuccess.php",
+		"/Applications/MAMP/htdocs/Masilo2/lib/form/doctrine/sfForkedDoctrineApplyPlugin/base/BasesfGuardUserProfileForm.class.php",
+		"/Applications/MAMP/htdocs/Masilo2/plugins/sfForkedDoctrineApplyPlugin/lib/form/doctrine/PluginsfGuardUserProfileForm.class.php",
+		"/Applications/MAMP/htdocs/Masilo2/lib/form/doctrine/sfForkedDoctrineApplyPlugin/sfGuardUserProfileForm.class.php",
+		"/Applications/MAMP/htdocs/Masilo2/lib/form/UserBioForm.class.php",
+		"/Applications/MAMP/htdocs/Masilo2/apps/frontend/modules/profile/actions/actions.class.php",
+		"/Applications/MAMP/htdocs/Masilo2/web/js/plugins/jquery.autosize-min.js",
+		"/Applications/MAMP/htdocs/Masilo2/apps/frontend/modules/profile/templates/saveBioSuccess.php",
+		"/Applications/MAMP/htdocs/Masilo2/apps/frontend/modules/profile/templates/_bio.php",
+		"/Applications/MAMP/htdocs/Masilo2/apps/frontend/modules/profile/templates/indexSuccess.php",
+		"/Applications/MAMP/htdocs/Masilo2/apps/frontend/modules/browse/templates/videosSuccess.php",
+		"/Applications/MAMP/htdocs/Masilo2/apps/frontend/modules/browse/templates/_videos.php",
+		"/Applications/MAMP/htdocs/Masilo2/apps/frontend/modules/browse/templates/_video.php",
+		"/Applications/MAMP/htdocs/Masilo2/apps/frontend/modules/browse/templates/_document_item.php",
+		"/Applications/MAMP/htdocs/Masilo2/apps/frontend/modules/browse/templates/_video_item.php",
+		"/Applications/MAMP/htdocs/Masilo2/apps/frontend/modules/feed/templates/_feedtype15.php",
+		"/Users/Dusan/Desktop/Font-Awesome-master/css/font-awesome.css",
+		"/Applications/MAMP/htdocs/Masilo2/web/css/webfonts/font-awesome.css",
+		"/Applications/MAMP/htdocs/Masilo2/apps/frontend/modules/profile/templates/libraryVidsSuccess.php",
+		"/Applications/MAMP/htdocs/Masilo2/apps/frontend/modules/search/actions/actions.class.php",
+		"/Applications/MAMP/htdocs/Masilo2/apps/frontend/modules/profile/templates/librarySuccess.php",
+		"/Applications/MAMP/htdocs/Masilo2/apps/frontend/modules/feed/templates/_feedtype14.php",
+		"/Applications/MAMP/htdocs/Masilo2/web/js/profileedit.js",
+		"/Applications/MAMP/htdocs/Masilo2/apps/frontend/modules/company/actions/actions.class.php",
+		"/Applications/MAMP/htdocs/Masilo2/apps/frontend/modules/company/templates/_companyhead.php",
+		"/Applications/MAMP/htdocs/Masilo2/apps/frontend/modules/company/config/view.yml",
+		"/Applications/MAMP/htdocs/Masilo2/apps/frontend/modules/company/templates/indexSuccess.php",
+		"/Applications/MAMP/htdocs/Masilo2/apps/frontend/modules/profile/templates/_statuspost.php",
+		"/Applications/MAMP/htdocs/Masilo2/apps/frontend/modules/fund/templates/saveStatusSuccess.php",
+		"/Applications/MAMP/htdocs/Masilo2/apps/frontend/modules/company/templates/saveStatusSuccess.php",
+		"/Applications/MAMP/htdocs/Masilo2/apps/frontend/modules/company/templates/hideFromPublicSuccess.php",
+		"/Applications/MAMP/htdocs/Masilo2/apps/frontend/modules/sfGuardForgotPassword/lib/BasesfGuardForgotPasswordActions.class.php",
+		"/Applications/MAMP/htdocs/Masilo2/apps/frontend/modules/sfGuardForgotPassword/templates/indexSuccess.php",
+		"/Applications/MAMP/htdocs/Masilo2/web/scss/elements/_js_modal.scss",
+		"/Applications/MAMP/htdocs/Masilo2/apps/frontend/modules/company/templates/peopleSuccess.php",
+		"/Applications/MAMP/htdocs/Masilo2/apps/frontend/modules/event/templates/_events.php",
+		"/Applications/MAMP/htdocs/Masilo2/apps/frontend/modules/fund/templates/eventSuccess.php",
+		"/Applications/MAMP/htdocs/Masilo2/apps/frontend/modules/fund/templates/eventsSuccess.php",
+		"/Applications/MAMP/htdocs/Masilo2/apps/frontend/modules/fund/config/view.yml",
+		"/Applications/MAMP/htdocs/Masilo2/apps/frontend/modules/fund/templates/indexSuccess.php",
+		"/Applications/MAMP/htdocs/Masilo2/apps/frontend/modules/fund/templates/_fundhead.php",
+		"/Applications/MAMP/htdocs/Masilo2/web/scss/elements/_buttons.scss",
+		"/Applications/MAMP/htdocs/Masilo2/web/scss/elements/_bootstrap.scss",
+		"/Applications/MAMP/htdocs/Masilo2/apps/frontend/modules/company/templates/_publicCompany.php",
+		"/Applications/MAMP/htdocs/Masilo2/apps/frontend/modules/profilebuilder/templates/step2Success.php",
+		"/Applications/MAMP/htdocs/Masilo2/apps/frontend/modules/profile/templates/step1Success.php",
+		"/Applications/MAMP/htdocs/Masilo2/apps/frontend/modules/profile/templates/saveSummarySuccess.php",
+		"/Applications/MAMP/htdocs/Masilo2/apps/frontend/modules/profile/templates/editSuccess.php",
+		"/Applications/MAMP/htdocs/Masilo2/apps/frontend/modules/profile/templates/activitySuccess.php",
+		"/Applications/MAMP/htdocs/Masilo2/apps/frontend/modules/company/templates/editSuccess.php",
+		"/Applications/MAMP/htdocs/Masilo2/apps/frontend/modules/company/templates/publicIndexSuccess.php",
+		"/Applications/MAMP/htdocs/Masilo2/apps/frontend/modules/profile/templates/publicIndexSuccess.php",
+		"/Applications/MAMP/htdocs/Masilo2/apps/frontend/modules/profile/templates/_publicUser.php",
+		"/Applications/MAMP/htdocs/Masilo2/apps/frontend/modules/profile/config/view.yml",
+		"/Applications/MAMP/htdocs/Masilo2/apps/frontend/templates/_headerPublic.php",
+		"/Applications/MAMP/htdocs/Masilo2/apps/frontend/templates/_headerAuthenticatedNoSubmenu.php",
+		"/Applications/MAMP/htdocs/Masilo2/apps/frontend/templates/_headerAuthenticatedSlim.php",
+		"/Applications/MAMP/htdocs/Masilo2/apps/frontend/modules/document/templates/addpresentSuccess.php",
+		"/Applications/MAMP/htdocs/Masilo2/apps/frontend/modules/company/templates/addpresentSuccess.php",
+		"/Applications/MAMP/htdocs/Masilo2/apps/frontend/modules/document/templates/_presentation.php",
+		"/Applications/MAMP/htdocs/Masilo2/apps/frontend/modules/company/templates/_admins.php",
+		"/Applications/MAMP/htdocs/Masilo2/web/scss/elements/_js_tabs.scss",
+		"/Applications/MAMP/htdocs/Masilo2/apps/frontend/modules/company/templates/_menulist.php",
+		"/Applications/MAMP/htdocs/Masilo2/apps/frontend/modules/company/templates/_alsoViewedSmall.php",
+		"/Applications/MAMP/htdocs/Masilo2/apps/frontend/modules/company/templates/activitySuccess.php",
+		"/Applications/MAMP/htdocs/Masilo2/apps/frontend/modules/profile/templates/_alsoViewedSmall.php",
+		"/Applications/MAMP/htdocs/Masilo2/apps/frontend/modules/homepage/templates/authHomeSuccess.php",
+		"/Applications/MAMP/htdocs/Masilo2/apps/frontend/modules/homepage/templates/_peopleYMK.php",
+		"/Applications/MAMP/htdocs/Masilo2/lib/form/CompanyDisclaimerForm.class.php",
+		"/Applications/MAMP/htdocs/Masilo2/lib/form/CompanyProfileInvestmentForm.class.php",
+		"/Applications/MAMP/htdocs/Masilo2/lib/form/CompanyInvestmentForm.class.php",
+		"/Applications/MAMP/htdocs/Masilo2/lib/form/CompanyOverviewForm.class.php",
+		"/Applications/MAMP/htdocs/Masilo2/apps/frontend/modules/company/templates/_company_overview.php",
+		"/Applications/MAMP/htdocs/Masilo2/apps/frontend/modules/company/templates/fundsSuccess.php",
+		"/Applications/MAMP/htdocs/Masilo2/apps/frontend/modules/profile/templates/infoSuccess.php",
+		"/Applications/MAMP/htdocs/Masilo2/web/js/plugins/jquery.popover-1.1.1.js",
+		"/Applications/MAMP/htdocs/Masilo2/web/js/profileactions.js",
+		"/Applications/MAMP/htdocs/Masilo2/apps/frontend/modules/profile/templates/_recomendedFunds.php",
+		"/Applications/MAMP/htdocs/Masilo2/web/scss/elements/_labels.scss",
+		"/Applications/MAMP/htdocs/Masilo2/apps/frontend/modules/profile/templates/notificationsSuccess.php",
+		"/Applications/MAMP/htdocs/Masilo2/apps/frontend/modules/company/templates/libraryVideoSuccess.php",
+		"/Applications/MAMP/htdocs/Masilo2/apps/frontend/modules/company/templates/_doclistrowpress.php",
+		"/Applications/MAMP/htdocs/Masilo2/apps/frontend/modules/company/templates/_doclistrow.php",
+		"/Applications/MAMP/htdocs/Masilo2/apps/frontend/modules/feed/templates/_feedtype18.php",
+		"/Applications/MAMP/htdocs/Masilo2/apps/frontend/modules/feed/templates/_feedtype17.php",
+		"/Applications/MAMP/htdocs/Masilo2/apps/frontend/modules/feed/templates/_feedtype16.php",
+		"/Applications/MAMP/htdocs/Masilo2/apps/frontend/modules/feed/templates/_feedtype23.php",
+		"/Applications/MAMP/htdocs/Masilo2/apps/frontend/modules/notification/templates/_pagination.php",
+		"/Applications/MAMP/htdocs/Masilo2/apps/frontend/modules/feed/templates/_pagination.php",
+		"/Applications/MAMP/htdocs/Masilo2/apps/frontend/modules/feed/templates/_feedtype19.php",
+		"/Applications/MAMP/htdocs/Masilo2/apps/frontend/modules/feed/templates/_feedtype8.php",
+		"/Users/Dusan/Desktop/authHomeSuccess.php",
+		"/Applications/MAMP/htdocs/Masilo2/apps/frontend/modules/edComments/templates/_newComment.php",
+		"/Applications/MAMP/htdocs/Masilo2/apps/frontend/modules/edComments/templates/_commentLink.php",
+		"/Applications/MAMP/htdocs/Masilo2/apps/frontend/modules/feed/templates/_feedtype9.php",
+		"/Applications/MAMP/htdocs/Masilo2/apps/frontend/modules/feed/templates/_feedtype3.php",
+		"/Applications/MAMP/htdocs/Masilo2/apps/frontend/modules/profile/templates/libraryVideoSuccess.php",
+		"/Applications/MAMP/htdocs/Masilo2/lib/vendor/symfony/test/unit/helper/TagHelperTest.php",
+		"/Users/Dusan/Desktop/_newComment.php",
+		"/Applications/MAMP/htdocs/Wordpress_sites/etondigital/wp-content/themes/ed04/functions.php",
+		"/Applications/MAMP/htdocs/Masilo2/plugins/sfForkedDoctrineApplyPlugin/modules/sfApply/templates/applySuccess.php",
+		"/Applications/MAMP/htdocs/Masilo2/apps/frontend/modules/feed/templates/_feedtype2.php",
+		"/Applications/MAMP/htdocs/Masilo2/apps/frontend/modules/profile/templates/saveStatusSuccess.php",
+		"/Applications/MAMP/htdocs/Masilo2/apps/frontend/modules/profile/templates/_interests.php",
+		"/Applications/MAMP/htdocs/Masilo2/apps/frontend/modules/homepage/actions/components.class.php",
+		"/Volumes/Data/Dropbox/shared/ED-starter-framework/js/global.js",
+		"/Users/Dusan/Desktop/test/js/global.js",
+		"/Applications/MAMP/htdocs/Masilo2/apps/frontend/modules/feed/templates/_feedtype12.php",
+		"/Applications/MAMP/htdocs/Masilo2/apps/frontend/modules/feed/templates/_feedtype11.php",
+		"/Applications/MAMP/htdocs/Masilo2/apps/frontend/modules/feed/templates/_feedtype10.php",
+		"/Applications/MAMP/htdocs/Masilo2/apps/frontend/modules/profile/templates/_summary.php",
+		"/Applications/MAMP/htdocs/Masilo2/apps/frontend/modules/connection/templates/_profileButton.php",
+		"/Applications/MAMP/htdocs/Masilo2/web/scss/_screen764.scss",
+		"/Applications/MAMP/htdocs/Masilo2/web/scss/_screen980.scss"
+	],
+	"find":
+	{
+		"height": 33.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			".autosize",
+			"autosize",
+			"jquery.autosize-min.js",
+			"<i aria-hidden=\"true\" class=\"icon-external-link\"></i>",
+			"strong",
+			"<strong>",
+			"zzzzz",
+			".popover",
+			"sfGuardUserProfileForm",
+			"sfUserBioForm",
+			"formOverview",
+			".top",
+			"added a video",
+			"-page",
+			"ed-comments",
+			"ed-commentsed-comments-page",
+			"ed-comments",
+			"http://placekitten.com/200/150",
+			"is now connected to",
+			"ed-upload-button-profilePhoto",
+			"Status deleted",
+			"Status deleted\nStatus deleted\nStatus deleted",
+			"formHideFromPublic",
+			"Hide_image",
+			"Remove connection",
+			"asdfghj",
+			"flright",
+			"Membership request sent!",
+			"popover",
+			".popover",
+			"Loading...",
+			"ed-conversation-participants-ac",
+			"<a class=\"remove\">x</a>",
+			"feedmore",
+			"<span>Post</span>",
+			"ed-comments-show-hidden",
+			".popover-content",
+			":",
+			"}",
+			"placeholder=\"Comment\"",
+			"id=\"profileimg\"",
+			"</strong>",
+			"<strong>",
+			"formPresentation-cancel",
+			"button-grfoup",
+			".selected",
+			"tabal",
+			"icon-plus",
+			"target=\"_blank\"",
+			"div class=\"framed\"",
+			"#statuspost-wrap",
+			"status",
+			"POPRAVI",
+			"POGLEDAJ",
+			"popravi",
+			"<!--PODESITE OVO-->",
+			"<i class=\"icon-",
+			"<i class=\"icon-plus",
+			".big",
+			"edit",
+			"me",
+			"adddocumentfield-cancel",
+			"<i class=\"icon-thumbs-down\"></i>",
+			"<i class=\"icon-thumbs-up\"></i>",
+			".pic",
+			"echo date(\"",
+			"added a video",
+			"liked a video",
+			"3px",
+			"<strong>More</strong>",
+			"pic",
+			"Sorry, no more items to show",
+			"ed-comments-plugin-form",
+			"ed-comments-toggle",
+			"include_component('edComments'",
+			"<p></p>",
+			".ta",
+			".pic",
+			"Pitchlist",
+			"width=\"38",
+			"<i class=\"icon-minus\"",
+			"th ",
+			"userF",
+			".pic",
+			"is now connected to",
+			"Connections",
+			"time",
+			"ed-comments-plugin-form",
+			".pic",
+			"include_component('edComments",
+			"like",
+			"feedmodal-box",
+			"elemid",
+			"item-list-wrap",
+			"a.pic",
+			"Edit Personal Info",
+			"ed-upload-button-profilePhoto",
+			"summarybox",
+			".pic",
+			"div.pic",
+			"summarybox-wrap",
+			"center bold",
+			"profile-",
+			"span12 top",
+			"class=\"button",
+			"strong",
+			"all",
+			"icon-plus",
+			"profile",
+			"<b>",
+			"ProfileBio_investor",
+			"Alphature",
+			"load-more",
+			"box",
+			".zzzzz",
+			"<li class=\"load-more\">",
+			".box",
+			"<li class=\"load-more\">",
+			".box",
+			"load-more",
+			"'error'",
+			"flright",
+			"h3",
+			"loadmore",
+			"All",
+			"span4 offset8 bottom aright",
+			"</label>",
+			"<label>"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			": ",
+			"	}",
+			"",
+			"Alphature",
+			"Pitchlist",
+			"<strong></label>",
+			"<label><strong>",
+			"edconnection button",
+			"<p class=\"no-more last\">No",
+			"Post to Alphature&hellip;",
+			"@include border-radius($border_radius);",
+			":",
+			"",
+			"Alphature",
+			"	}",
+			"<label>",
+			"</label>",
+			"<label>",
+			"$blue",
+			"aria-hidden=\"true\" class=\"icon",
+			"$border_color",
+			"",
+			"Post to AlphaTree",
+			"class=\"button action switcher\"",
+			"i aria-hidden=\"true\" class=\"icon",
+			"Post to AlphaSpring&hellip;",
+			"",
+			"src=\"/pics",
+			"biggest",
+			"",
+			"'etondigital')",
+			"<html class=\"no-js\" lang=\"en-GB\">",
+			"modernizr-2.6.1-respond-1.1.0.min.js",
+			"li:nth-child(5)",
+			"",
+			"class:biggest 80x7",
+			"[textarea class:biggest",
+			"</p>",
+			"<p class=\"hint\">",
+			" <span class=\"required\">*</span></label>",
+			"maxHeight + 'px'",
+			"$light_grey",
+			"<i aria-hidden=\"true\" class",
+			"etondigital",
+			"-",
+			"class=\"container\"",
+			"-",
+			"//",
+			"class=\"container\"",
+			".span",
+			"1000",
+			"150",
+			"<a href=\"#\" id=\"toggle-menu\" rel=\"nofollow\" title=\"Show/hide the main menu\">Menu</a>",
+			"introinner",
+			"EtonDigital",
+			".introintro",
+			"ul.portfolio a img",
+			"$futura",
+			"$border_color",
+			"$text_color",
+			"$sans;",
+			"http://sport4kids.biz",
+			"\"",
+			"-999",
+			"sport4kids",
+			"",
+			"<p>",
+			"font-family: $alternategothic;",
+			"font-family: $bemioregular;",
+			"font-family: $sans;",
+			"http://sport4kids.etondigital.com",
+			"$text_color",
+			"http://sport4kids.etondigital.com",
+			"sport4kids",
+			"h3",
+			"$light_blue",
+			"$light_grey",
+			"$link_color",
+			"$color",
+			"#slides",
+			"sport4kids",
+			"\"AlternateGothicFSNo3\"",
+			"Sport4Kids",
+			"http://kapaprojekt2",
+			"#555",
+			"#clouds",
+			"&amp;",
+			"(.2s",
+			"(.15s",
+			"(.1s",
+			"ul.slides",
+			"\"futura-pt\"",
+			"proxima-nova",
+			"",
+			"$",
+			"",
+			"jQuery",
+			"etondigital",
+			"$link_hover",
+			".projects-and-news a img",
+			"bodyfont",
+			".projects-and-news",
+			"$",
+			"#{$path}",
+			"wpednew_",
+			"http://wltc2",
+			"http://wltc",
+			"on Mon 30 jan 2012-->",
+			"",
+			"http://wltc",
+			"idsandclasses",
+			"IDs and Classes",
+			"idsandclasses",
+			"idsandclasse",
+			"340x255",
+			".title",
+			"Lorem ipsum dot com",
+			"h2>",
+			"340x280",
+			"340x260",
+			"340x255",
+			"",
+			"279x174",
+			"$link_color"
+		],
+		"reverse": false,
+		"show_context": false,
+		"use_buffer2": false,
+		"whole_word": false,
+		"wrap": true
+	},
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 32.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 308.0
+	},
+	"replace":
+	{
+		"height": 325.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"basesfguarduserprofileform",
+				"lib/form/doctrine/sfForkedDoctrineApplyPlugin/base/BasesfGuardUserProfileForm.class.php"
+			],
+			[
+				"pluginsfguarduserprofileform",
+				"plugins/sfForkedDoctrineApplyPlugin/lib/form/doctrine/PluginsfGuardUserProfileForm.class.php"
+			],
+			[
+				"sfguarduserprofileform",
+				"lib/form/doctrine/sfForkedDoctrineApplyPlugin/sfGuardUserProfileForm.class.php"
+			],
+			[
+				"companydisclaimerform",
+				"lib/form/CompanyDisclaimerForm.class.php"
+			],
+			[
+				"companyprofileinvestmentform",
+				"lib/form/CompanyProfileInvestmentForm.class.php"
+			],
+			[
+				"companyoverviewform",
+				"lib/form/CompanyOverviewForm.class.php"
+			],
+			[
+				"alsov",
+				"apps/frontend/modules/company/templates/_alsoViewedSmall.php"
+			],
+			[
+				"follows",
+				"apps/frontend/modules/profile/templates/followSuccess.php"
+			],
+			[
+				"recommends",
+				"apps/frontend/modules/profile/templates/recommendSuccess.php"
+			],
+			[
+				"sfwidgetformschemaformatter",
+				"lib/vendor/symfony/lib/widget/sfWidgetFormSchemaFormatter.class.php"
+			],
+			[
+				"sfuserapp",
+				"lib/form/sfUserApplyForm.class.php"
+			],
+			[
+				"sfwidgetformatter",
+				"lib/vendor/symfony/lib/widget/sfWidgetFormSchemaFormatter.class.php"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 343.0,
+	"status_bar_visible": true
+}
